@@ -1,0 +1,14 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=522
+
+Once this script is installed, attempting to edit a tarfile will present the
+user with a list of files contained in the tar archive.  By moving the cursor
+over a filename and pressing ENTER, the contents of a file can be viewed in
+read-only mode, in a new window.  Unfortunately, write support for tarfile
+components is not currently possible.
+
+Requires GNU tar, or a tar implementation that supports the "P" (don't strip
+out leading /'s from filenames), and "O" (extract files to standard output)
+options.  Additionally, gzip is required for handling *.tar.Z, *.tar.gz,
+and *.tgz compressed tarfiles, and bzip2 is required for handling *.tar.bz2
+compressed tarfiles.  A unix-like operating system is probably also required.
+
